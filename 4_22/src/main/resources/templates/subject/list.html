@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/head :: head_fragment(title = '書籍情報一覧', scripts = ~{::script}, links = ~{::link})"></head>
+<body>
+ <div class="container">
+   <h1>登録書籍一覧</h1>
+   <div class="float-end">
+     <a th:href="@{/subject/add}" class="btn btn-primary">新規登録はこちら</a>
+   </div>
+   <div>
+   <table class="table table-striped">
+     <thead>
+       <tr>
+         <th>ID</th>
+         <th>書籍名</th>
+		<th>著者名</th>
+         <th></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr th:each="subject : ${subjectlist}" th:object="${subject}" class="align-middle">
+         <td th:text="*{bookid}"></td>
+         <td th:text="*{title}"></td>
+		 <td th:text="*{name}"></td>
+		 <td> <a th:href="@{/subject/{id}/edit(id=${subject.bookid})}" class="btn btn-secondary">編集</a></td>
+		 <td> <a th:href="@{/subject/{id}/delete(id=${subject.bookid})}" class="btn btn-danger">削除</a></td>		   
+	 </tr>
+     </tbody>
+   </table>
+ </div>
+</body>
+</html>
