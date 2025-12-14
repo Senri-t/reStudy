@@ -62,19 +62,8 @@ body {
   width: 140px;
   background-color: #FFC2C5;
   margin: 0 auto 20px auto;
-}
-
-
-.pink1 {
-  height: 50px;
-}
-
-.pink2 {
   height: 40px;
-}
-
-.pink3 {
-  height: 50px;
+  border: 5px solid #ffffff;
 }
 
 
