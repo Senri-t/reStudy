@@ -48,10 +48,11 @@
   .right {
     width: 200px;
     height: 250px;
-    padding: 20px 0px 0px 30px;
+    padding: 20px 0px 0px 0px;
   }
 
   .pink {
+    display: flex;
     width: 140px;
   }
 
