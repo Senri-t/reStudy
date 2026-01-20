@@ -62,7 +62,7 @@ public String subjectCreate(@Validated SubjectForm subjectRequest, BindingResult
     for (ObjectError error : result.getAllErrors()) {
       errorList.add(error.getDefaultMessage());
     }
-    model.addAttribute("subjectRequest", new SubjectForm());
+    model.addAttribute("subjectRequest", subjectRequest);
     model.addAttribute("validationError", errorList);
     return "subject/add";
   }
