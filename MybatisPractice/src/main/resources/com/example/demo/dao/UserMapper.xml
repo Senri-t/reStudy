@@ -23,7 +23,14 @@
 	<!-- 課題1 下記にユーザー情報の主キー検索SQLを記述 -->
 	<select id="findById" resultType="com.example.demo.entity.UserEntity">
 	
-	SELECT * FROM "user"
+	SELECT 
+	    id,
+		name,
+		address,
+		phone,
+		update_date,
+		create_date
+	FROM "user"
 	WHERE id = #{id}
 	
 	</select>
@@ -31,7 +38,7 @@
 	<!-- 課題2 下記にユーザー情報の新規登録SQLを記述 -->
 	<insert id="insert" parameterType="com.example.demo.entity.UserEntity">
 	
-	INSERT INTO users (name,address,phone,up_date,create_date)
+	INSERT INTO "user" (name,address,phone,update_date,create_date)
 	VALUES (#{name}, #{address}, #{phone},#{updateDate},#{createDate})
 		
 	</insert>
@@ -40,14 +47,16 @@
 	<!-- 課題3 下記にユーザー情報の更新する動的SQLを記述 ※<if test="name != null">name = #{name},</if> -->
 	<update id="update" parameterType="com.example.demo.entity.UserEntity">
 	
-	UPDATE user
+	UPDATE "user"
+	WHERE id = #{id}
+	
 	<set>
 	
 	<if test="address != null">address = #{address},</if>
 	<if test="name != null">name = #{name},</if>
 	<if test="phone != null">phone = #{phone},</if>
-	<if test="updateDate != null">up_date = #{updateDate},</if>
-}
+	<if test="updateDate != null">update_date = #{updateDate},</if>
+	
 	</set>
 		
 	</update>
