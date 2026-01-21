@@ -48,7 +48,7 @@
 	<update id="update" parameterType="com.example.demo.entity.UserEntity">
 	
 	UPDATE "user"
-	WHERE id = #{id}
+	
 	
 	<set>
 	
@@ -59,6 +59,7 @@
 	
 	</set>
 		
+		WHERE id = #{id}
 	</update>
 	
 
