@@ -1,0 +1,106 @@
+2026-01-08 00:08:16.383 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -
+				Restarting due to 22 class path changes (0 additions, 12 deletions, 10 modifications)
+2026-01-08 00:08:16.394 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08 00:08:16.401 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:16.413 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Graceful shutdown complete
+2026-01-08 00:08:16.418 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:16.423 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2026-01-08 00:08:16.436 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2026-01-08 00:08:23.593 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				Starting SamplePracticeApplication using Java 21.0.8 with PID 63392 (C:\Users\izoya\Java\Study\SamplePractice\target\classes started by izoya in C:\Users\izoya\Java\Study\SamplePractice)
+2026-01-08 00:08:23.594 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2026-01-08 00:08:23.926 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port 8080 (http)
+2026-01-08 00:08:23.927 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:23.927 [restartedMain] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2026-01-08 00:08:23.928 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-08 00:08:23.957 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2026-01-08 00:08:23.957 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 352 ms
+2026-01-08 00:08:24.152 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Starting...
+2026-01-08 00:08:24.210 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@768ebf1d
+2026-01-08 00:08:24.211 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Start completed.
+2026-01-08 00:08:24.211 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -
+				H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/SamplePractice'
+2026-01-08 00:08:24.236 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2026-01-08 00:08:24.241 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:24.247 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port 8080 (http) with context path '/'
+2026-01-08 00:08:24.251 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				Started SamplePracticeApplication in 0.778 seconds (process running for 716.87)
+2026-01-08 00:08:24.253 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -
+				Condition evaluation unchanged
+2026-01-08 00:08:25.652 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -
+				Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2026-01-08 00:08:25.653 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08 00:08:25.654 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Pausing ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:25.659 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown -
+				Graceful shutdown complete
+2026-01-08 00:08:25.659 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Stopping ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:25.661 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Shutdown initiated...
+2026-01-08 00:08:25.672 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-2 - Shutdown completed.
+2026-01-08 00:08:25.797 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				Starting SamplePracticeApplication using Java 21.0.8 with PID 63392 (C:\Users\izoya\Java\Study\SamplePractice\target\classes started by izoya in C:\Users\izoya\Java\Study\SamplePractice)
+2026-01-08 00:08:25.799 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2026-01-08 00:08:26.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port 8080 (http)
+2026-01-08 00:08:26.035 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:26.036 [restartedMain] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2026-01-08 00:08:26.036 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/10.1.44]
+2026-01-08 00:08:26.057 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2026-01-08 00:08:26.057 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 251 ms
+2026-01-08 00:08:26.212 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-3 - Starting...
+2026-01-08 00:08:26.257 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1ea74d03
+2026-01-08 00:08:26.257 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-3 - Start completed.
+2026-01-08 00:08:26.257 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -
+				H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/SamplePractice'
+2026-01-08 00:08:26.267 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2026-01-08 00:08:26.272 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+2026-01-08 00:08:26.277 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port 8080 (http) with context path '/'
+2026-01-08 00:08:26.280 [restartedMain] INFO  c.e.demo.SamplePracticeApplication -
+				Started SamplePracticeApplication in 0.516 seconds (process running for 718.899)
+2026-01-08 00:08:26.281 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -
+				Condition evaluation unchanged
+2026-01-08 00:26:07.096 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-08 00:26:07.097 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2026-01-08 00:26:07.098 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 1 ms
+2026-01-08 22:35:23.196 [HikariPool-3:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=14h41m50s482ms831µs300ns).
+2026-01-08 23:54:43.586 [HikariPool-3:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=49s189ms556µs300ns).
