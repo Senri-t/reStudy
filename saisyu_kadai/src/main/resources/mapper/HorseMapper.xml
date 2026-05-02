@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.HorseMapper">
+
+    <!-- 一覧 -->
+    <select id="findAll" resultType="com.example.demo.entity.Horse">
+        SELECT
+            id,
+            frame_number AS frameNumber,
+            horse_number AS horseNumber,
+            horse_name AS horseName,
+            jockey_name AS jockeyName,
+            sex,
+            age,
+            popularity
+        FROM horses
+        ORDER BY horse_number
+    </select>
+
+    <!-- 詳細 -->
+    <select id="findById" parameterType="int" resultType="com.example.demo.entity.Horse">
+        SELECT
+            id,
+            frame_number AS frameNumber,
+            horse_number AS horseNumber,
+            horse_name AS horseName,
+            jockey_name AS jockeyName,
+            sex,
+            age,
+            popularity,
+            father_name AS fatherName,
+            mother_name AS motherName,
+            mother_father_name AS motherFatherName,
+            owner_name AS ownerName
+        FROM horses
+        WHERE id = #{id}
+    </select>
+
+</mapper>

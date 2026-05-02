@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/head :: head(${horse.horseName})"></head>
+
+<body>
+
+<h1 th:text="${horse.horseName}"></h1>
+
+<ul>
+  <li>父: <span th:text="${horse.fatherName}"></span></li>
+  <li>母: <span th:text="${horse.motherName}"></span></li>
+  <li>母父: <span th:text="${horse.motherFatherName}"></span></li>
+  <li>性別: <span th:text="${horse.sex}"></span></li>
+  <li>年齢: <span th:text="${horse.age}"></span></li>
+  <li>馬主: <span th:text="${horse.ownerName}"></span></li>
+</ul>
+
+<a href="/horses">一覧に戻る</a>
+
+</body>
+</html>

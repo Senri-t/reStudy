@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/head :: head('秋華賞2003 出馬表')"></head>
+
+<body>
+
+<!-- レース情報 -->
+<div class="race-header">
+  <div class="race-title">秋華賞（GⅠ）</div>
+  <div class="race-info">
+    2003年10月19日 京都11R / 芝2000m / 3歳牝
+  </div>
+</div>
+
+<table>
+
+  <tr>
+    <th>枠馬</th>
+    <th>馬名</th>
+    <th>騎手</th>
+    <th>人気</th>
+    <th>詳細</th>
+  </tr>
+
+  <tr th:each="horse : ${horses}">
+
+    <!-- 枠＋馬番（統合） -->
+    <td class="waku-cell">
+      <span th:text="${horse.frameNumber}"
+            th:class="'waku frame-' + ${horse.frameNumber}"></span>
+
+      <span class="umaban"
+            th:text="${horse.horseNumber}"></span>
+    </td>
+
+    <!-- 馬名＋性齢 -->
+    <td class="horse-name">
+      <span th:text="${horse.horseName}"></span>
+      <span class="sex-age"
+            th:text="${horse.sex + horse.age}"></span>
+    </td>
+
+    <!-- 騎手 -->
+    <td class="jockey"
+        th:text="${horse.jockeyName}"></td>
+
+    <!-- 人気 -->
+    <td class="popularity"
+        th:text="${horse.popularity}"></td>
+
+    <!-- 詳細 -->
+    <td>
+      <a th:href="@{/horses/{id}(id=${horse.id})}">詳細</a>
+    </td>
+
+  </tr>
+
+</table>
+
+</body>
+</html>
